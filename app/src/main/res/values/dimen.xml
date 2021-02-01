@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cell__height">90dp</dimen>
+    <dimen name="cell__width">100dp</dimen>
+    <dimen name="num__width">100dp</dimen>
+    <dimen name="main__body__height">130dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="layout__height">120dp</dimen>
+
+</resources>
