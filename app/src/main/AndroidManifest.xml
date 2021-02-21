@@ -10,26 +10,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <receiver android:name=".BattaryBroadcastReceiver" android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BATTERY_CHANGED"/>
-            </intent-filter>
-        </receiver>
-        <activity android:name=".BroadcastReceiverActivity" >
+        <activity android:name=".ProductListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".BroadcastReceiverActivity"/>
         <activity android:name=".NameListActivity" />
         <activity android:name=".SharedPreverenceActivity" />
         <activity android:name=".NotifyActivity" />
         <activity android:name=".CalculatorActivity" />
         <activity android:name=".MainActivity" />
+        <receiver
+            android:name=".BattaryBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
     </application>
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
 
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"
-        tools:ignore="ProtectedPermissions" />
+
 </manifest>
