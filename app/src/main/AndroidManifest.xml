@@ -10,13 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".AsyncMetodsActivity">
+        <activity
+            android:name=".ProductListKotlinActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".OpenWeatherActivity">
+
+        </activity>
+        <activity android:name=".AsyncMetodsActivity" />
         <activity android:name=".ProductListActivity" />
         <activity android:name=".BroadcastReceiverActivity" />
         <activity android:name=".NameListActivity" />
@@ -34,9 +39,10 @@
         </receiver>
     </application>
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
-
     <uses-permission
         android:name="android.permission.WRITE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
