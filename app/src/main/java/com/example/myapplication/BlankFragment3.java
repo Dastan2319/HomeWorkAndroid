@@ -41,7 +41,7 @@ public class BlankFragment3 extends Fragment {
         for (String item : tempName) {
             names.add(new NameModel(item,"Test"+item,""));
         }
-        gridView.setAdapter(new ArrayAdapter<NameModel>(Objects.requireNonNull(getContext()), android.R.layout.simple_selectable_list_item , names){
+        gridView.setAdapter(new ArrayAdapter<NameModel>(requireContext(), android.R.layout.simple_selectable_list_item , names){
             @NonNull
             @Override
             public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

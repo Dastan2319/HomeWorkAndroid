@@ -10,16 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity
-            android:name=".ProductListKotlinActivity">
+        <activity android:name=".ProductListKotlinActivity" />
+        <activity android:name=".OpenWeatherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".OpenWeatherActivity">
-
         </activity>
         <activity android:name=".AsyncMetodsActivity" />
         <activity android:name=".ProductListActivity" />
