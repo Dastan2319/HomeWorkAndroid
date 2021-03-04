@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BroadcastReceiverKotlinActivity">
+
+    <Button
+        android:id="@+id/startCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Начать проверку батарей"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stopCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Остановить проверку"
+        app:layout_constraintEnd_toEndOf="@+id/startCheck"
+        app:layout_constraintStart_toStartOf="@+id/startCheck"
+        app:layout_constraintTop_toBottomOf="@+id/startCheck" />
+
+    <Switch
+        android:id="@+id/sound"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Звук"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopCheck"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/vibration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Вибрация"
+        app:layout_constraintEnd_toEndOf="@+id/sound"
+        app:layout_constraintStart_toStartOf="@+id/sound"
+        app:layout_constraintTop_toBottomOf="@+id/sound"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/dialogSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Диалоговое окно при низком заряде"
+        app:layout_constraintEnd_toEndOf="@+id/vibration"
+        app:layout_constraintStart_toStartOf="@+id/vibration"
+        app:layout_constraintTop_toBottomOf="@+id/vibration"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
