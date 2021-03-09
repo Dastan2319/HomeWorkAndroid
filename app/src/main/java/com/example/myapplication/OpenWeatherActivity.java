@@ -99,7 +99,7 @@ public class OpenWeatherActivity extends AppCompatActivity {
 //        private Double pressure;
 
     }
-    class Main {
+    public class Main {
         @SerializedName("temp")
         public float temp;
         @SerializedName("humidity")

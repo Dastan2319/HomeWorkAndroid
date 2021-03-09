@@ -10,5 +10,6 @@
     <color name="blue">#2196F3</color>
     <color name="red_light">#FDF6F6</color>
     <color name="red">#FB0000</color>
+    <color name="background">#B5C1C1C1</color>
 
 </resources>
