@@ -12,14 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity android:name=".AlarmActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 <!--        <activity android:name=".AlarmWithPushActivity" />-->
-<!--        <activity android:name=".AsyncMethodsKotlinActivity" />-->
+        <activity android:name=".AsyncMethodsKotlinActivity" >
+
+        </activity>
         <activity android:name=".BroadcastReceiverKotlinActivity">
 
         </activity>
@@ -34,7 +32,13 @@
         <activity android:name=".NameListActivity" />
         <activity android:name=".SharedPreverenceActivity" />
         <activity android:name=".NotifyActivity" />
-        <activity android:name=".CalculatorActivity" />
+        <activity android:name=".CalculatorActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity" />
 
         <receiver
